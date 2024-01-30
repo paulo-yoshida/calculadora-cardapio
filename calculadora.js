@@ -41,3 +41,26 @@ carregarAlimentos().then(dados => {
 }).catch(erro => {
   console.error('Erro:', erro);
 });
+
+
+// Função para calcular as calorias e atualizar o elemento HTML
+function atualizarCalorias() {
+  // Obtém a quantidade inserida pelo usuário
+  var quantidade = parseFloat(document.getElementById('proteinas_quantidade').value);
+
+  // Obtém o índice da proteína selecionada
+  var indiceProteina = document.getElementById('proteinas').value;
+
+  // Obtém as calorias por grama da proteína selecionada usando os dados do arquivo CSV
+  var caloriasPorGramas = dadosAlimentos[indiceProteina].calorias_por_grama;
+
+  // Calcula as calorias totais
+  var caloriasTotais = quantidade * caloriasPorGramas;
+
+  // Atualiza o elemento HTML com as calorias calculadas
+  document.getElementById('proteinas_calorias').textContent = caloriasTotais.toFixed(2) + ' calorias';
+}
+
+// Adiciona um evento de escuta para o input de quantidade e select de proteínas
+document.getElementById('proteinas_quantidade').addEventListener('input', atualizarCalorias);
+document.getElementById('proteinas').addEventListener('change', atualizarCalorias);
