@@ -3,7 +3,7 @@ const fs = require("fs");
 const csv = require('csvtojson');
 
 (async () => {
-  // load csv
+    // load csv
   const tbalimentos = await csv().fromFile("alimentos.csv");
   
   //
