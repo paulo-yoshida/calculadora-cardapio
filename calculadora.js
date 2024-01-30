@@ -1,4 +1,4 @@
-const url = 'https://raw.githubusercontent.com/paulo-yoshida/calculadora-cardapio/b1daa0e6bbf2d3d947c99a8e947ee43570faa813/alimentos.csv';
+const urlAlimentos = 'https://raw.githubusercontent.com/paulo-yoshida/calculadora-cardapio/b1daa0e6bbf2d3d947c99a8e947ee43570faa813/alimentos.csv';
 
 // Função para carregar e processar o arquivo CSV
 async function carregarAlimentos() {
