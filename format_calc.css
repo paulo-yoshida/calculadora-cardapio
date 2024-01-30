@@ -1,0 +1,112 @@
+:root {
+  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+  --option-bg: rgb(82, 133, 67);
+  --select-bg: rgba(255, 255, 255, 0.2);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: linear-gradient(60deg, rgb(112, 159, 221), rgb(209, 86, 209));
+}
+
+.titulo{
+  font-size: 36px;
+  padding: 1em 1em 1em 1em;
+  text-align: left;
+  justify-content: center;
+  color: azure;
+}
+
+.wrapper {
+  display:flex;
+  flex-direction: column;
+}
+
+.label{
+  font-size: 20px;
+  padding: 1em 1em 0.5em 1em;
+  text-align: left;
+  justify-content: center;
+  color: azure;
+}
+
+.container_escolhas{
+  padding: 0.5em 1em 2em 1em;
+  text-align: left;
+  justify-content: center;
+  color: azure;
+}
+
+
+/* <select> styles */
+select {
+  /* Reset */
+  padding: 1em 1em 1em 1em;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20rem;
+  background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+select option {
+  background-color: rgba(120, 54, 196, 0.271); /* Altere a cor de fundo conforme necessário */
+  color: rgba(93, 93, 153, 0.986); /* Altere a cor do texto conforme necessário */
+}
+
+
+.porcao{
+  display:flex;
+  flex-direction: column;
+  padding: 1em 0em 0em 0em;
+}
+
+.quantLabel{
+  padding-bottom: 0.5em;
+}
+
+input{
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20rem;
+  background: linear-gradient(var(--arrow-bg) 3em, var(--select-bg) 3em);
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.calorias{
+  padding-top: 0.5em;
+}
+
+button {
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  background-color: #0f065c60; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Cursor ao passar o mouse */
+  font-size: 16px; /* Tamanho da fonte */
+  transition: background-color 0.3s; /* Efeito de transição na mudança de cor de fundo */
+}
+
+button:hover {
+  background-color: #0f065c; /* Cor de fundo ao passar o mouse */
+}
