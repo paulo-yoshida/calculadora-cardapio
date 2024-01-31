@@ -16,7 +16,7 @@ body {
 
 .cabecalho{
   display: grid;
-  grid-template-columns: 22% 88%;
+  grid-template-columns: 22% 58% 20%;
   width: 105%;
   column-gap: 3px;
   background-color: rgba(32, 3, 48, 0.926);
