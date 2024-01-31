@@ -10,71 +10,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="titulo">
-    Calculadora de Cardápio
-  </div>
   <div class="wrapper">
-    <div class="label">
-      1. Meta de Calorias da Refeição:
-    </div>
-    <div class="container_meta">
-        <input class="input_meta" id="meta_calorias" type="number" placeholder="Insira a meta para a refeição">
-      <div class="progress-bar">
-        <div class="progress" id="progress"></div>
+    <div class="cabecalho">
+      <div>
+        <img src="">
       </div>
-      <div class="container_comparacao">
-        <div class="comparacao" id="comparacao_total">total</div>
-        <div class="comparacao" id="comparacao_pct">(xx%)</div>
+      <div class = "rbnutricao">RB Nutrição</div>
+      <div>Vazio</div>
+    </div>
+    <div class="titulo">
+      Calculadora &#10; de Cardápio
+    </div>
+
+    <div class="secao">
+      <div class="label">
+        1. Meta de Calorias da Refeição:
+      </div>
+      <div class="container_meta">
+          <input class="input_meta" id="meta_calorias" type="number" placeholder="Insira a meta para a refeição">
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <div class="container_comparacao">
+          <div class="comparacao" id="comparacao_total">total</div>
+          <div class="comparacao" id="comparacao_pct">(xx%)</div>
+        </div>
       </div>
     </div>
-    <div class="label">
-      2. Escolha uma opção de proteínas:
-    </div>
-    <div class="container_escolhas">
-      <select id="proteinas">
-        <option selected value="0">Selecione uma opção</option>
-        <option value="1">Carne</option>
-        <option value="2">Frango</option>
-        <option value="3">Peixe</option>
-      </select>
-      <div class="porcao">
-        <div class="quantLabel">
-          Insira a quantidade em gramas (g):
-        </div>
-        <div class="quantValue">
-          <input id="proteinas_quantidade" type="number" placeholder="ex: 80">
-        </div>
-        <div class="calorias" id="proteinas_calorias">
-          <!-- Conteúdo dinâmico das calorias será inserido aqui -->
+
+
+    <div class="secao">
+      <div class="label">
+        2. Escolha uma opção de proteínas:
+      </div>
+      <div class="container_escolhas">
+        <select id="proteinas">
+          <option selected value="0">Selecione uma opção</option>
+          <option value="1">Carne</option>
+          <option value="2">Frango</option>
+          <option value="3">Peixe</option>
+        </select>
+        <div class="porcao">
+          <div class="quantLabel">
+            Insira a quantidade em gramas (g):
+          </div>
+          <div class="quantValue">
+            <input id="proteinas_quantidade" type="number" placeholder="ex: 80">
+          </div>
+          <div class="calorias" id="proteinas_calorias">
+            <!-- Conteúdo dinâmico das calorias será inserido aqui -->
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Adicione mais blocos semelhantes para carboidratos, leguminosas e legumes -->
-
-    <div class="label">
-      3. Escolha uma opção de carboidratos:
-    </div>
-    <div class="container_escolhas">
-      <select id="carboidratos">
-        <option selected value="0">Selecione uma opção</option>
-        <option value="1">Macarrão</option>
-        <option value="2">Arroz</option>
-        <option value="3">Batata</option>
-      </select>
-      <div class="porcao">
-        <div class="quantLabel">
-          Insira a quantidade em gramas (g):
-        </div>
-        <div class="quantValue">
-          <input id="carboidratos_quantidade" type="number" placeholder="ex: 80">
-        </div>
-        <div class="calorias" id="carboidratos_calorias">
-          <!-- Conteúdo dinâmico das calorias será inserido aqui -->
+    <div class="secao">
+      <div class="label">
+        3. Escolha uma opção de carboidratos:
+      </div>
+      <div class="container_escolhas">
+        <select id="carboidratos">
+          <option selected value="0">Selecione uma opção</option>
+          <option value="1">Macarrão</option>
+          <option value="2">Arroz</option>
+          <option value="3">Batata</option>
+        </select>
+        <div class="porcao">
+          <div class="quantLabel">
+            Insira a quantidade em gramas (g):
+          </div>
+          <div class="quantValue">
+            <input id="carboidratos_quantidade" type="number" placeholder="ex: 80">
+          </div>
+          <div class="calorias" id="carboidratos_calorias">
+            <!-- Conteúdo dinâmico das calorias será inserido aqui -->
+          </div>
         </div>
       </div>
     </div>
-
     <!-- Adicione blocos semelhantes para leguminosas e legumes -->
 
   </div>

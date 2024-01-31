@@ -10,22 +10,58 @@
 body {
   display: grid;
   place-items: center;
-  min-height: 100vh;
   background: linear-gradient(60deg, rgb(112, 159, 221), rgb(209, 86, 209));
   font-family:'Comfortaa';
 }
 
+.cabecalho{
+  display: grid;
+  grid-template-columns: 22% 32% 55%;
+  width: 105%;
+  column-gap: 10px;
+  background-color: rgba(35, 34, 34, 0.926);
+  height: 7rem;
+  margin-top: -2.5%;
+  margin-left: -2.5%;
+  color:white;
+}
+
+.rbnutricao{
+  color: white;
+  align-self: center;
+  text-align: center;
+  position: relative;
+  /*top:50%;
+  transform:translateY(-0.5em);*/
+}
+
+.imagem{
+  color: white;
+  align-self: center;
+  text-align: center;
+  position: relative;
+  /*top:50%;
+  transform:translateY(-0.5em);*/
+}
+
 .titulo{
   font-size: 36px;
-  padding: 1em 1em 1em 1em;
+  padding: 0.5em 1em 1em 0.2em;
   text-align: left;
-  justify-content: center;
+  justify-content: left;
   color: azure;
+  white-space: pre-line;
 }
 
 .wrapper {
   display:flex;
   flex-direction: column;
+}
+
+.secao{
+  background-color: #201e274d;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .label{
