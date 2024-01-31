@@ -16,11 +16,11 @@ body {
 
 .cabecalho{
   display: grid;
-  grid-template-columns: 22% 32% 55%;
+  grid-template-columns: 22% 88%;
   width: 105%;
-  column-gap: 10px;
-  background-color: rgba(35, 34, 34, 0.926);
-  height: 7rem;
+  column-gap: 3px;
+  background-color: rgba(32, 3, 48, 0.926);
+  height: 5rem;
   margin-top: -2.5%;
   margin-left: -2.5%;
   color:white;
@@ -29,19 +29,33 @@ body {
 .rbnutricao{
   color: white;
   align-self: center;
-  text-align: center;
+  text-align: left;
   position: relative;
+  white-space: pre-line;
+  font-size: 18px;
   /*top:50%;
   transform:translateY(-0.5em);*/
 }
 
-.imagem{
+.container_imagem{
   color: white;
   align-self: center;
   text-align: center;
   position: relative;
-  /*top:50%;
-  transform:translateY(-0.5em);*/
+}
+
+.imagem{
+  margin-left: 40%;
+  color: white;
+  position: relative;
+  width: 50%;
+  top:50%;
+  transform:translateY(-50%);
+  border-radius: 100%;
+  border-color: rgba(255, 255, 255, 0.611);
+  border-width: 2px;
+  border-style: solid;
+  max-height: 4rem;
 }
 
 .titulo{
