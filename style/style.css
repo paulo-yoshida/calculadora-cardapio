@@ -60,6 +60,14 @@ body {
   max-height: 4rem;
 }
 
+.instagram_logo{
+  position: relative;
+  width: 32%;
+  top:50%;
+  transform:translateY(-50%);
+  max-height: 4rem;
+}
+
 .titulo{
   font-size: 36px;
   padding: 0.5em 1em 1em 0.2em;
