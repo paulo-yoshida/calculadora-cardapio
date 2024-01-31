@@ -33,6 +33,8 @@ body {
   position: relative;
   white-space: pre-line;
   font-size: 18px;
+  font-weight: 500;
+  font-family: 'Noto Serif', serif;
   /*top:50%;
   transform:translateY(-0.5em);*/
 }
